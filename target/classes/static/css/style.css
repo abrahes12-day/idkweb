@@ -20,11 +20,30 @@
 	justify-content: space-between;
 }
 
+.nav{
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.fa-2x{	
+    color: white;
+    text-align: center;
+}
+
 .navbar ul li{
 	list-style: none;
 	display: inline-block;
 	padding: 28px 5px;
-	margin-right: 50px;
+	margin-right: 20px;
+}
+
+.navbar ul li a.sign-in{
+	border: rgb(90, 253, 0); 
+	border-width: 4px; 
+	border-style: solid;
+	height: 2px;
+	text-align: center;
 }
 
 .navbar ul li a {
@@ -36,6 +55,7 @@
 }
 
 .logo {
+	
 	height: auto;
 	padding: 28px 50px;
 	color: white;
@@ -59,15 +79,38 @@
 
 }
 
+.menu {
+	display: none;
+}
+
 .navbar ul li a.active,
 .navbar ul li a:hover {
 	background: red;
 	border-radius: 2px;
 }
+.navbar ul li a.sign-in.active,
+.navbar ul li a.sign-in:hover {
+    background: rgb(90, 253, 0);
+	border-radius: 2px;
+}
 
+@media all and (max-width: 964px) {
+	.menu {
+		display: block;
+	}
+	
+	.navbar ul li {
+	    list-style: none;
+	    display: block;
+	    padding: 10px 5px;
+	    margin-right: 20px;
+	}
+	
+	.active-toggle {
+		display: block;
+	}
 
-
-
+}
 
 
 
