@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script src="/js/jquery-3.5.1.min.js"></script>
+
+	<title>idkwhatisthis</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<nav class="navbar">
+			<div class="logo">
+				<h1 class="logo-name">idkwhatisthis.net</h1>
+			</div>
+
+			<div id="nav">
+				<ul class="nav-list">
+					<li class="list-item"><a href="#">Home</a></li>
+					<li><a href="#">About me</a></li>
+					<li><a href="#">Project</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+
+	<script>
+	
+		$('#nav').on('click', 'ul > li > a', function () {
+			$('a').removeClass('active');
+			$(this).closest('a').addClass('active');
+		})
+		
+	</script>
+
+
+</body>
+
+</html>
