@@ -55,7 +55,6 @@
 }
 
 .logo {
-	
 	height: auto;
 	padding: 28px 50px;
 	color: white;
@@ -99,17 +98,13 @@
 		display: block;
 	}
 	
-	.navbar ul li {
-	    list-style: none;
-	    display: block;
-	    padding: 10px 5px;
-	    margin-right: 20px;
+	.navbar {
+		justify-content: space-evenly;
 	}
 	
-	.active-toggle {
-		display: block;
+	.navbar ul li {
+		display: none;
 	}
-
 }
 
 

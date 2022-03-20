@@ -19,7 +19,7 @@
 			<div class="logo">
 				<h1 class="logo-name">idkwhatisthis.net</h1>
 			</div>
-			<div class="nav">
+			<div class="nav" id="nav-hover">
 				<div class="container-nav">
 					<ul class="nav-list" id="navi-list">
 						<li class="list-item"><a class="active" href="#">Home</a></li>
@@ -39,16 +39,9 @@
 
 	<script>
 
-		$('#nav').on('click', 'ul > li > a', function () {
+		$('#nav-hover').on('click', 'ul > li > a', function () {
 			$('a').removeClass('active');
 			$(this).closest('a').addClass('active');
-		})
-		
-		const toggleButton = document.getElementById('toggle-button');
-		const naviList = document.getElementById('navi-list');
-		
-		toggleButton.addEventListener('click', () => {
-			naviList.classList.toggle('active');
 		})
 
 	</script>
