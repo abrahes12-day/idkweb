@@ -13,10 +13,11 @@ body {
 
 
 /* [START] Setting for header-menu */
+
 	.container-header {
 		background: url(/img/programming-code-colorful.jpg) no-repeat;
 		background-size: cover;
-		height: 135vh;
+		height: 125vh;
 	}
 	
 	.navbar {
@@ -104,7 +105,7 @@ body {
 		left: 55%;
 		transform: translate(-60%, -50%);
 		font-family: 'Fira Sans', sans-serif !important;
-		user-select: none;
+		user-select: none
 	}
 	
 	.center h1 {
@@ -114,6 +115,7 @@ body {
 		width: 900px;
 		text-align: center;	
 		background: rgb(211, 215, 207, 0.051);
+		
 	}
 	
 	.center h2 {
@@ -125,13 +127,12 @@ body {
 		background: rgb(211, 215, 207, 0.051);
 	}
 	.center h3 {
-		color: rgb(255, 255, 255);
+		color: rgb(238, 238, 236);
 		font-size: 15px;
-		font-weight: 300;
+		font-weight: bold;
 		width: 900px;
 		text-align: center;	
-		background: rgb(211, 215, 207, 0.051);
-		
+		background: rgb(0, 0, 0, 0.7);
 	}
 	
 	.center h4 {
@@ -167,32 +168,38 @@ body {
 		background: rgb(90, 253, 0);
 	}
 	
-/*	.describe {
-		text-align: center;
-		font-size: 45px;
-		font-weight: 900;
-		width: 900px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	
 	.slider {
-		color: #ffc107;
-		box-sizing: border-box;
-		animation: slider 6s linear infinite;
+		color: rgb(233, 185, 110);
+		font-size: 45px;
+		font-weight: bold;
+		text-align: center;
+		margin: 20px auto; 
+	  	position: relative; 
+	  	width: 600px; 
+	  	height: 100px; 
+	  	padding: 5px; 
+	  	background: rgb(211, 215, 207, 0.051);
 	}
 	
-	@keyframes slider {
-		0%{ margin-left: -2000px; }
-		30%{ margin-left: -2000px; }
-		35%{ margin-left: 0px; }
-		65%{ margin-left: 0px; }
-		70%{ margin-left: 400px; }
-		100%{ margin-left: 400px; }
-	}*/
+	.slider > div { 
+  		position: absolute; 
+  		top: 25px; 
+  		left: 25px; 
+  		right: 25px; 
+  		bottom: 25px; 
+	}
 
 /*[FINISH] Setting for header-menu */
+
+/*[START] Setting for main-menu */
+
+	.container-main {
+		background: rgb(0, 0, 0);
+		height: 300vh;
+		margin: 20px 40px;
+	}
+
+/*[FINISH] Setting for main-menu */
 
 @media all and (max-width: 964px) {
 	.menu {

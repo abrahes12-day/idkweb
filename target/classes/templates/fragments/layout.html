@@ -21,7 +21,7 @@
 				<h1 class="logo-name">C U D A Y</h1>
 			</div>
 			<div class="nav" id="nav-hover">
-				<div class="container-nav">
+				<div class="container-nav" id="slider-animation">
 					<ul class="nav-list" id="navi-list">
 						<li class="list-item"><a class="active" href="#">Home</a></li>
 						<li><a href="#">About me</a></li>
@@ -39,15 +39,13 @@
 			<h1>Hello!</h1>
 			<h2>I am Yhudi Cornelius</h2>
 			<h3>and "Cuday" is my nickname</h3>
-			<!--<div class="describe">
-				<div class="slider">
-					<div>Backend Web Developer</div>
-					<div>Programming Enthusiast</div>
-					<div>Humoris</div>
-					<div>Good Speaker</div>
-					<div>I love Cat :)</div>
-				</div>
-			</div>-->
+			<div class="slider">
+				<div>Backend Web Developer</div>
+				<div>Programming Enthusiast</div>
+				<div>Humoris</div>
+				<div>Good Speaker</div>
+				<div>I love Cat :)</div>
+			</div>
 			<h4>Passionate with Backend Web Developer, and i'd love to learn everything about code! </h4>
 			<div class="buttons">
 				<button>Visit My Store</button>
@@ -73,7 +71,17 @@
 			$('a').removeClass('active');
 			$(this).closest('a').addClass('active');
 		})
+		
+		$(".slider > div:gt(0)").hide();
 
+		setInterval(function () {
+			$('.slider > div:first')
+				.fadeOut(1000)
+				.next()
+				.fadeIn(1000)
+				.end()
+				.appendTo('.slider');
+		}, 3000);
 	</script>
 
 
